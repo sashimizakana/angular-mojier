@@ -1,0 +1,25 @@
+{
+  "name": "angular-mojier",
+  "version": "1.0.0",
+  "description": "AngularJS module adapting mojier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sashimizakana",
+  "license": "MIT",
+  "keywords":['emoji','AngularJS'],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sashimizakana/angular-mojier"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.7",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-footer": "^1.0.5",
+    "gulp-header": "^1.2.2",
+    "mojier": "^1.0.8",
+    "vinyl-source-stream": "^1.1.0",
+  }
+}
