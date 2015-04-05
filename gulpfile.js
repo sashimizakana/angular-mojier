@@ -17,20 +17,20 @@ function getFooter(){
     return ['})(window.angular);'].join();
 }
 
-gulp.task('default',['build']);
+gulp.task('default',['build','browserify']);
 
 gulp.task('build',function(){
 
     return gulp.src('source/*.js')
-               .pipe(concat('mojier.js'))
+               .pipe(concat('main.js'))
                .pipe(header(getHeader()))
                .pipe(footer(getFooter()))
-               .pipe(gulp.dest('release'));
+               .pipe(gulp.dest('./'));
 });
 
-gulp.task('browserify',function(){
+gulp.task('browserify',['build'],function(){
     return browserify({
-        entries:['./release/mojier.js']
+        entries:['./main.js']
     }).bundle()
         .pipe(source("mojier.js"))
         .pipe(gulp.dest('release'));
