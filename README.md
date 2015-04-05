@@ -1,4 +1,4 @@
-# angular-mojier
+# angular-mojier(もじゃー)
 AngularJS module adapting [mojier](https://github.com/sashimizakana/mojier)
 # Demo
 not yet
