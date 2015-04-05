@@ -23,7 +23,7 @@ angular.module('app',[mojier]);
 ```js
 angular.module('app',['sakana.mojier']).controller('ctrl',function(mojier){
   var emoji = mojier.get('smile');//U+1F604
-  mojier.findAlias(emoji);//smile  
+  mojier.findAlias(emoji);//smile
   this.aliases = mojier.getAllAliases();//array of the all emoji aliases
 });
 ```
@@ -33,7 +33,7 @@ angular.module('app',['sakana.mojier']).controller('ctrl',function(mojier){
 {{text|mojier}}<!-- Thank you (U+1F604) -->
 ```
 
-#Lisence
+# Lisence
 
 MIT
 
