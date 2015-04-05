@@ -1,7 +1,7 @@
 # angular-mojier(もじゃー)
 AngularJS module adapting [mojier](https://github.com/sashimizakana/mojier)
 # Demo
-not yet
+http://sashimizakana.github.io/angular-mojier/
 # Installation
 - Download release/mojier.js
 - After loading AngularJS
