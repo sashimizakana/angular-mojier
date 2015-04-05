@@ -20,7 +20,7 @@ var mojier = require('angular-mojier');
 angular.module('app',[mojier]);
 ```
 # Service
-```
+```js
 angular.module('app',['sakana.mojier']).controller('ctrl',function(mojier){
   var emoji = mojier.get('smile');//U+1F604
   mojier.findAlias(emoji);//smile  
