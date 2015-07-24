@@ -33,6 +33,15 @@ angular.module('app',['sakana.mojier']).controller('ctrl',function(mojier){
 {{text|mojier}}<!-- Thank you (U+1F604) -->
 ```
 
+## Prefix and suffix
+
+```js
+
+$filter('Thank you :smile:','<span class="emoji">','</span>');
+//Thank you <span class="emoji">(U+1F604)</span>
+
+```
+
 # Lisence
 
 MIT

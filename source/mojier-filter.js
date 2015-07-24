@@ -1,5 +1,7 @@
 function mojierFilter(mojier){
-    return function(input){
+    return function(input,prefix,suffix){
+        prefix = prefix || "";
+        suffix = suffix || "";
         var matches = null;
         if(!input || !(matches = input.match(/:(.*?):/g))){
             return input;
@@ -8,7 +10,7 @@ function mojierFilter(mojier){
         for(var i=0;i<matches.length;i++){
             var emoji = mojier.get(matches[i].replace(/:/g,""));
             if(emoji){
-                input = input.replace(matches[i],emoji);
+                input = input.replace(matches[i],prefix + emoji + suffix);
             }
         }
         return input;
