@@ -1,6 +1,6 @@
 {
   "name": "angular-mojier",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "AngularJS module adapting mojier",
   "main": "main.js",
   "scripts": {
